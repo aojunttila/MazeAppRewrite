@@ -23,6 +23,7 @@
     * The code is in the MazeApp folder in your current repository. You can skip all the steps under “starting point code”
     * You will use VS Code and not Eclipse.
     * Consider questions 2, 4, and 5 in Part 5. We will discuss them as a class.
+    * The code for displaying the maze is image-based instead of text based.
 * You will work with a partner on this summative lab and demonstrate your understanding of using GitHub as a team
     * Commit to GitHub frequently, at least daily, with a meaningful commit message
     * You and your partner must create and use branches for your development as specified in the daily milestones
