@@ -1,29 +1,13 @@
-import java.awt.Color;
-
 public class Square
 {
     public static final int SPACE = 0;
     public static final int WALL = 1;
     public static final int START = 2;
     public static final int EXIT = 3;
-
-    public static final Color SPACECOLOR = Color.WHITE;
-    public static final Color WALLCOLOR = Color.BLACK;
-    public static final Color STARTCOLOR = Color.BLUE;
-    public static final Color EXITCOLOR = Color.RED;
-    public static final Color EXPLOREDCOLOR = Color.GREEN;
-    public static final Color WORKLISTCOLOR = Color.YELLOW;
-    public static final Color PATHCOLOR = Color.CYAN;
     
     private int type;
     private int row;
     private int col;
-
-    public boolean isActive=false;
-    public boolean onPath=false;
-    public boolean explored=false;
-    public boolean isStart=false;
-    public Square previous=null;
 
     /**
      * Constructor for objects of class Square
@@ -78,33 +62,18 @@ public class Square
         if(this.getType() == Square.SPACE) {
             str = "_";
         }
-
-        if(explored){
-            str = ".";
-        }
-        else if(isActive){
-            str = "o";
-        }
-        else if(onPath){
-            str = "x";
-        }
-
-        if(this.getType() == Square.START) {
+        else if(this.getType() == Square.START) {
             str = "S";
         }
         else if(this.getType() == Square.EXIT) {
             str = "E";
         }
-
-        if(this.getType() == Square.WALL) {
+        else if(this.getType() == Square.WALL) {
             str = "#";
         }
 
         return str;
     }
-
-    //REMOVE
-    public void reset(){}
 
     @Override
     public boolean equals(Object other)
