@@ -4,6 +4,7 @@
  * Students should not need to modify anything in this file.
  * 
  * @author Benjamin Kuperman (Spring 2012)
+ * Maze display code rewritten by August Junttila
  *
  * When you are ready to incorporate this class in the project, 
  * 	select the entire contents of this file and then select the
