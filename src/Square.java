@@ -79,14 +79,14 @@ public class Square
             str = "_";
         }
 
-        if(explored){
+        if(onPath){
+            str = "x";
+        }
+        else if(explored){
             str = ".";
         }
         else if(isActive){
             str = "o";
-        }
-        else if(onPath){
-            str = "x";
         }
 
         if(this.getType() == Square.START) {
